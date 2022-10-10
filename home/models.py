@@ -25,7 +25,7 @@ class HomePage(Page):
     button_text = models.CharField(
         max_length =50,
         default = "Read More",
-        blank = False,
+        blank = True,
         help_text ="bouton pour le texte"
     ) # Ajouter un bouton pour mettre du text.
 
