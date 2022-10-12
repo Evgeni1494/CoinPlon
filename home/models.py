@@ -1,7 +1,7 @@
 from nturl2path import url2pathname
 from django.db import models
 from wagtail.models import Page
-from wagtail.admin.edit_handlers import FieldPanel, PageChooserPanel, StreamFieldPanel
+from wagtail.admin.edit_handlers import FieldPanel, PageChooserPanel
 from streams import blocks
 from wagtail.core.fields import StreamField
 
@@ -48,5 +48,5 @@ class HomePage(Page):
         PageChooserPanel("button"),
         FieldPanel("button_text"),
         FieldPanel("banner_background_image"),
-        StreamFieldPanel("body")   
+        FieldPanel("body")   
     ]
