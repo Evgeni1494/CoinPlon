@@ -1,3 +1,4 @@
+from nturl2path import url2pathname
 from django.db import models
 from wagtail.models import Page
 from wagtail.admin.edit_handlers import FieldPanel, PageChooserPanel
@@ -21,6 +22,7 @@ class HomePage(Page):
         default= "Read More",
         blank=False,
         help_text="Bouton pour le texte",
+        
     )
     banner_background_image = models.ForeignKey(
         'wagtailimages.Image',
